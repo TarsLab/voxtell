@@ -1,0 +1,41 @@
+{
+  "name": "voxtell",
+  "version": "0.0.1",
+  "description": "vox & tell — batch speech synthesis with word-level timelines, from your terminal.",
+  "type": "module",
+  "bin": {
+    "voxtell": "bin/voxtell.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "echo '发布前先把 CLI 打包成 JS:src/cli 是 TS,装进 node_modules 后 Node 不做 type stripping,bin 会挂' && exit 1"
+  },
+  "keywords": [
+    "tts",
+    "asr",
+    "forced-alignment",
+    "word-level-timeline",
+    "cli",
+    "agent-friendly"
+  ],
+  "author": "tarslab",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarslab/voxtell.git"
+  },
+  "homepage": "https://github.com/tarslab/voxtell#readme",
+  "bugs": {
+    "url": "https://github.com/tarslab/voxtell/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^5.6.0"
+  }
+}

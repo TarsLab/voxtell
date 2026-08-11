@@ -1,0 +1,2 @@
+# 独立仓库边界:阻止 pnpm 向上把本包并入宿主目录的 workspace
+packages: []
