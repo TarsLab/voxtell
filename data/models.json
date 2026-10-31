@@ -1,0 +1,37 @@
+{
+  "schema": "voxtell-models",
+  "version": 1,
+  "note": "能力表是数据文件,文档表格是它的视图。新型号小样本实测后才回填;price 为 null 表示单价未登记,dry-run 只报字符数。",
+  "models": [
+    {
+      "id": "qwen-audio-3.0-tts-plus",
+      "provider": "qwen",
+      "modes": ["batch", "realtime"],
+      "wordTimestamps": false,
+      "instruction": true,
+      "inlineTags": true,
+      "formats": ["mp3", "wav", "pcm", "opus"],
+      "sampleRates": [8000, 16000, 22050, 24000, 44100, 48000],
+      "voicePrefix": "qwen-audio-3.0-tts-plus-",
+      "region": "cn-beijing",
+      "tested": "2026-08-07 S0 实测:批量/实时 words 恒空;instruction 批量走 input.instruction 可传;实时 TTFB ~835ms",
+      "price": null,
+      "recommended": true
+    },
+    {
+      "id": "qwen-audio-3.0-tts-flash",
+      "provider": "qwen",
+      "modes": ["batch", "realtime"],
+      "wordTimestamps": false,
+      "instruction": true,
+      "inlineTags": true,
+      "formats": ["mp3", "wav", "pcm", "opus"],
+      "sampleRates": [8000, 16000, 22050, 24000, 44100, 48000],
+      "voicePrefix": "qwen-audio-3.0-tts-flash-",
+      "region": "cn-beijing",
+      "tested": "2026-08-07 S0 实测:同 plus;音色名必须带 flash 前缀,短名 400",
+      "price": null,
+      "recommended": false
+    }
+  ]
+}
