@@ -1,5 +1,11 @@
 # voxtell
 
+> **已并进 cotutor(2026-10-31),本仓归档,不再维护。** 合成请求、按内容寻址的缓存与音色表搬进了
+> [TarsLab/cotutor](https://github.com/TarsLab/cotutor) 的 `src/media/tts.ts`,cotutor 不再起 voxtell 子进程;
+> 字级对齐(`align` / `transcribe`)没有做,也不再做。npm 包 `voxtell` 不再更新。
+>
+> **Merged into [cotutor](https://github.com/TarsLab/cotutor) on 2026-10-31; this repo is archived.**
+
 **vox & tell** — batch speech synthesis with word-level timelines, from your terminal.
 
 > **Status: V0 + batch (2026-08-17).** `say` / `batch` / `voices` / `preview` / `models` / `doctor`
